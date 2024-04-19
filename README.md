@@ -15,10 +15,10 @@ Online Store Application is designed using Java RMI (Remote Method Invocation). 
 
 ### RMI Implementations
 
-- **AdminManagementImpl.java**: Implements the `rmi.AdminManagement` interface, providing concrete functionalities for administrative tasks.
-- **ProductManagementImpl.java**: Implements the `rmi.ProductManagement` interface, offering methods to manage the product inventory.
-- **ShoppingCartManagementImpl.java**: Implements the `rmi.ShoppingCartManagement` interface, facilitating shopping cart functionalities for users.
-- **UserManagementImpl.java**: Implements the `rmi.UserManagement` interface, handling user registration and authentication.
+- **AdminManagementImpl.java**: Implements the `AdminManagement` interface, providing concrete functionalities for administrative tasks.
+- **ProductManagementImpl.java**: Implements the `ProductManagement` interface, offering methods to manage the product inventory.
+- **ShoppingCartManagementImpl.java**: Implements the `ShoppingCartManagement` interface, facilitating shopping cart functionalities for users.
+- **UserManagementImpl.java**: Implements the `UserManagement` interface, handling user registration and authentication.
 
 ### FrontController
 - **FrontController.java:** Serves as the central point of control and management for all incoming requests in the Online Store application. It encapsulates the common processing algorithm for requests, delegating specific tasks to appropriate handlers based on the type of request. This design pattern helps maintain a clean separation of concerns and promotes more manageable code by centralizing request handling logic.
@@ -29,9 +29,9 @@ Online Store Application is designed using Java RMI (Remote Method Invocation). 
 - **client.Client.java**: Acts as the client application, looking up remote objects in the RMI registry and invoking their methods to perform operations like product management, user authentication, and shopping cart manipulation.
 
 
-## Usage
+## To run this project in your local machine:
 
-To deploy this application:
+Follow these steps:
 1. Navigate to the project directory.
 2. In terminal run `make` command to compile the entire project.
 3. Run `make run-server` to initialize and bind remote objects.

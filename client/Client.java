@@ -12,10 +12,8 @@ public class Client {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         try {
-            String host = "in-csci-rrpc01.cs.iupui.edu";
             int port = 2025;
-
-            Registry registry = LocateRegistry.getRegistry(host, port);
+            Registry registry = LocateRegistry.getRegistry("localhost", port);
             FrontController frontController = (FrontController) registry.lookup("rmi.FrontController");
 
 

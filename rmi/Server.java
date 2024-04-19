@@ -6,8 +6,6 @@ import java.rmi.registry.Registry;
 public class Server {
     public static void main(String[] args)  {
         try {
-            System.setProperty("java.rmi.server.hostname", "in-csci-rrpc01.cs.iupui.edu");
-
             ProductManagement productManagement = new ProductManagementImpl();
             UserManagement userManagement = new UserManagementImpl();
             ShoppingCartManagement shoppingCartManagement = new ShoppingCartManagementImpl();
